@@ -12,6 +12,7 @@
 }
 #am{
     font-size: 5vw;
+    opacity: 0.6;
 }
 section{
     position: relative;
@@ -51,7 +52,7 @@ section img{
     justify-content: space-evenly;
 }
 #para{
-    opacity: 0.8;
+    opacity: 0.6;
     font-size: 1.5rem;
     line-height: 1.6;
 }
@@ -106,7 +107,7 @@ div img{
     overflow-x: hidden;
 }
 .projectContainer::before{
-    background: url('/images/bg-details.jpg') center center / cover
+    background: url('images/bg-details.jpg') center center / cover
     no-repeat fixed;
     content: "";
     position: absolute;
@@ -126,6 +127,17 @@ footer{
     justify-content:space-evenly;
     align-items: center;
 }
+footer::before{
+     background: url('images/bg-after.jpg') center center / cover
+    no-repeat fixed;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
 #contain{
     width: 50%;
     display: flex;
@@ -137,17 +149,7 @@ footer{
     background-color: black;
     opacity: 0.7;
 }
-footer::before{
-     background: url('/images/bg-after.jpg') center center / cover
-    no-repeat fixed;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+
 
 @media (max-width:769px) {
     #aboutme{

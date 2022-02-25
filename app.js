@@ -1,5 +1,5 @@
 
-let bg = document.querySelector('#bg');
+// let bg = document.querySelector('#bg');
 let man = document.querySelector('#man');
 let ml = document.querySelector('#mountain_left');
 let mr = document.querySelector('#mountain_right');
@@ -11,6 +11,7 @@ let para = document.querySelector('#para');
 
 window.addEventListener('scroll', function () {
     let value = window.scrollY;
+    console.log(value);
     mr.style.left = value * 0.5 + 'px';
     ml.style.left = -value * 0.5 + 'px';
     c1.style.left = value * 0.35 + 'px';
